@@ -13,15 +13,19 @@
 
     body {
     font-family: Arial, sans-serif;
-    border: 10px solid white;
     background-color: white;
     margin-left: 10%;
     margin-right: 10%;
     }
 
-    h1 {
+    .header h1 {
     margin: 0;
     text-align: right;
+    }
+
+    .friends h1 {
+    margin: 0;
+    text-align: center;
     }
 
     h3 {
@@ -61,22 +65,49 @@
     clear: both;
     }
 
+    .friends {
+    width: 20%;
+    margin-right: 5%;
+    float: left;
+    }
+
+    .content {
+    width: 75%;
+    float: right;
+    }
+
+    *:hover {
+      background-color: palegoldenrod;
+    }
+
   </style>
 </head>
 <body>
-  <div class="header">
-    <h1>Arkid's Journal</h1>
-    <h3>so cool and so epic</h3>
+  <div class="column friends">
+    <h1>Friends</h1>
+    <ul>
+      <li><a href="#Testing1">Testing1</a></li>
+      <li><a href="#Testing2">Testing2</a></li>
+      <li><a href="#Testing3">Testing3</a></li>
+    </ul>
   </div>
-  <div class="post">
-    <h2>2.3.2023: Forks</h2>
-    <img src="fork.jpeg" alt="Forks" width="200">
-    <p>Why did the fork visit the dentist? It had a bit of a tine ache!</p>
-  </div>
-  <div class="post">
-    <h2>12.3.2023: Bevy</h2>
-    <img src="bevy.png" alt="Bevy" width="200">
-    <p>Why did the Rust crate called Bevy go on a diet? It wanted to shed some weight in game development!</p>
+  <div class="column content">
+      <div class="column">
+        <div class="header">
+          <h1>Arkid's Journal</h1>
+          <h3>so cool and so epic</h3>
+        </div>
+        <div class="post">
+          <h2>2.3.2023: Forks</h2>
+          <img src="fork.jpeg" alt="Forks" width="200">
+          <p>Why did the fork visit the dentist? It had a bit of a tine ache!</p>
+        </div>
+        <div class="post">
+          <h2>12.3.2023: Bevy</h2>
+          <img src="bevy.png" alt="Bevy" width="200">
+          <p>Why did the Rust crate called Bevy go on a diet? It wanted to shed some weight in game development!</p>
+        </div>
+      </div>
   </div>
 </body>
 </html>
